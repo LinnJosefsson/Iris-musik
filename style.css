@@ -1,0 +1,779 @@
+@charset "UTF-8";
+* {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("./img/irisbg.jpg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0px 50px;
+  }
+}
+
+/*
+@media screen and (max-width: 600px) {
+  body {
+    background-image: url("./img/ja00DSC_0193.JPG");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-width: 100%;
+
+    //background-position: -340px 0px;
+  }
+}*/
+/*
+@media screen and (max-width: 400px) {
+  body {
+    background-image: url("./img/bergsm.JPG");
+    background-repeat: no-repeat;
+    background-position: -10px 0px;
+   
+
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-width: 100%;
+
+    //background-position: -340px 0px;
+  }
+}*/
+@media (min-width: 400px) and (max-width: 1000px) {
+  body {
+    background-image: url("./img/irisbgsm.jpg");
+    background-position: center 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  body:after {
+    content: "";
+    position: fixed;
+    /* stretch a fixed position to the whole screen */
+    top: 0;
+    height: 100vh;
+    /* fix for mobile browser address bar appearing disappearing */
+    left: 0;
+    right: 0;
+    z-index: -1;
+    /* needed to keep in the background */
+    background: url("./img/bergsm.JPG") center center;
+    background-size: cover;
+  }
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: white;
+  /* Set a background color */
+  opacity: 70%;
+  font-family: "Courier New", Courier, monospace;
+  color: black;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 5px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 14px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #a5a4a4;
+  /* Add a dark-grey background on hover */
+  color: white;
+}
+
+.konstruktion {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  font-family: Courier, Courier New, monospace;
+}
+
+@media screen and (max-width: 999px) {
+  .dold {
+    display: none;
+  }
+}
+
+.margin {
+  color: white;
+}
+
+.centered-jumbo {
+  background-color: rgba(42, 74, 103, 0.7);
+  opacity: 80%;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+          box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 680px;
+  margin-bottom: -600px;
+  width: 95%;
+}
+
+.centered-jumbo p {
+  font-size: 15px;
+  font-family: Courier, Courier New, monospace;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 370px;
+  left: 100px;
+  background-color: black;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+          box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+  width: 470px;
+  height: 260px;
+  padding: 4px;
+  opacity: 70%;
+}
+
+/*
+@media screen and(max-width:2000px) {
+  .centered {
+    width: 500px;
+    left: 45%;
+    top: 45%;
+  }
+}
+
+@media screen and(max-width:1200px) {
+  .centered {
+    width: 500px;
+    left: 45%;
+    top: 40%;
+  }
+}*/
+@media screen and (min-width: 800px) {
+  .jumbotron {
+    display: none;
+  }
+}
+
+.centered-p {
+  font-size: 14px;
+  color: white;
+  font-family: Courier, Courier New, monospace;
+}
+
+@media screen and (max-width: 600px) {
+  .centered {
+    display: none;
+  }
+}
+
+.under {
+  margin-top: 30px;
+  width: 95%;
+}
+
+@media screen and (min-width: 990px) {
+  .under {
+    width: 90%;
+  }
+}
+
+/*
+@media screen and(max-width:700px) {
+  .centered-p {
+    font-size: 11px;
+  }
+}*/
+@media screen and (max-width: 400px) {
+  .info {
+    position: absolute;
+    top: 70px;
+    left: -12px;
+    width: 345px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .info {
+    position: absolute;
+    top: 70px;
+    left: -12px;
+    width: 345px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .info {
+    display: none;
+  }
+}
+
+/*
+@media screen and (min-width: 600px) {
+  .info {
+    width: 370px;
+    margin-top: 70px;
+    margin-left: 250px;
+    height: 70px;
+    background-color: whitesmoke;
+    opacity: 60%;
+  }
+}
+
+.info p {
+  font-family: $myFont;
+  font-size: 15px;
+  color: black;
+  text-align: left;
+  text-shadow: 1px 2px 2px rgba(233, 232, 232, 0.3);
+}*/
+/*
+.vista {
+  position: absolute;
+  top: 70px;
+  right: 70px;
+  width: 20%;
+  opacity: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .vista {
+    top: 80px;
+    left: 10px;
+  }
+}
+*/
+/*
+@media screen and(max-width:400px) {
+  .centered {
+    display: none;
+  }
+}*/
+@media screen and (max-width: 400px) {
+  .first {
+    position: absolute;
+    background-color: whitesmoke;
+    opacity: 70%;
+    top: 150px;
+    width: 85%;
+    height: 120px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .first {
+    position: absolute;
+    background-color: whitesmoke;
+    opacity: 90%;
+    top: 460px;
+    width: 100%;
+    max-height: 400px;
+    padding: 5px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .col1 {
+    float: left;
+    width: 250px;
+    padding-left: 30px;
+    font-family: Courier, Courier New, monospace;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .col2 {
+    float: left;
+    width: 350px;
+    padding-left: 30px;
+    margin-left: 100px;
+    font-family: Courier, Courier New, monospace;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .col2 {
+    margin-left: -20px;
+  }
+}
+
+@media screen and (max-width: 591px) {
+  .col2 {
+    margin-left: -1px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .first {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .goingon-sm {
+    position: absolute;
+    background-color: whitesmoke;
+    opacity: 60%;
+    width: 90%;
+    top: 170px;
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .goingon-sm p {
+    font-size: 12px;
+    font-family: Courier, Courier New, monospace;
+    color: black;
+    padding-left: 5px;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .goingon-sm {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .goingon-sm p {
+    display: none;
+  }
+}
+
+/*
+.left {
+  float: left;
+  font-family: $myFont;
+  color: black;
+}
+.right {
+  float: right;
+  font-family: $myFont;
+  color: black;
+}*/
+p {
+  font-size: 16px;
+  color: #cbcecd;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #omoss {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .omoss {
+    margin-top: 360px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .projekt {
+    display: none;
+    width: 100%;
+  }
+}
+
+/*
+@media only screen and (min-width: 992px) {
+  a img {
+    -webkit-transition: -webkit-filter 0.4s ease-in-out;
+    transition: -webkit-filter 0.4s ease-in-out;
+    transition: filter 0.4s ease-in-out;
+    transition: filter 0.4s ease-in-out, -webkit-filter 0.5s ease-in-out;
+    -webkit-filter: grayscale(100%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+/* FF 35+ 
+  }
+}*/
+/*
+@media only screen and (min-width: 992px) {
+  img:hover {
+    -webkit-filter: grayscale(0%);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+/* FF 35+ 
+  }
+}*/
+/*
+@media only screen and (min-width: 992px) {
+  a img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+}*/
+/*
+//för att text ska synas vid hover på img(a)
+@media only screen and (min-width: 992px) {
+  a:hover + div {
+    display: block;
+    color: white;
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  a + div {
+    display: block;
+    color: white;
+    padding: 30px;
+  }
+}*/
+/* samma effekt som ovanstående?
+//så text syns utan hover i små skärmar
+@media only screen and(max-width:992px) {
+  .projekt {
+    display: block;
+    color: #cbcecd;
+    width: 100%;
+  }
+}*/
+.img-fluid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  max-width: 25%;
+  -webkit-box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+  box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+}
+
+/*
+.img-fluid:hover {
+  -webkit-filter: sepia(15%);
+  filter: sepia(15%);
+}*/
+@media screen and (max-width: 800px) {
+  .img-fluid {
+    width: 45%;
+  }
+}
+
+.container-fluid {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.navbar {
+  position: fixed;
+  z-index: 1;
+  padding-top: 10px;
+  border: 0;
+  -webkit-box-shadow: 0 4px 2px -2px lightgray;
+          box-shadow: 0 4px 2px -2px lightgray;
+  border-radius: 0;
+  margin-bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 4px;
+}
+
+.nav-logo {
+  width: 13%;
+  margin-top: -18px;
+}
+
+@media screen and (min-width: 1300px) {
+  .nav-logo {
+    margin-top: -10px;
+  }
+}
+
+.navbar-nav li {
+  margin-top: 4px;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar-nav li {
+    letter-spacing: 2px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .navbar-nav li {
+    margin-top: 5px;
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .navbar-nav li a {
+    font-size: 17px;
+  }
+}
+
+.navbar-nav li a:hover {
+  color: #71e66b !important;
+  font-size: 18px;
+}
+
+.navbar-collapse li {
+  margin-left: 3px;
+  margin-top: -5px;
+}
+
+.text-center {
+  font-family: Courier, Courier New, monospace;
+  color: #cbcecd;
+}
+
+ul a {
+  color: #c3eafc;
+}
+
+ul a:hover {
+  color: #cec8c8;
+  text-decoration: none;
+}
+
+h3 {
+  font-family: Courier, Courier New, monospace;
+  font-size: 35px;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+.underrubrik {
+  font-family: Courier, Courier New, monospace;
+  font-size: 18px;
+  margin-top: -35px;
+  color: #999393;
+}
+
+.responsive {
+  margin-top: 50px;
+  max-width: 1050px;
+  -webkit-box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+          box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+}
+
+@media screen and (max-width: 800px) {
+  .responsive {
+    margin-top: 100px;
+    max-width: 750px;
+  }
+}
+
+.container-mode {
+  margin: 0 auto;
+  width: 85%;
+  background-color: rgba(33, 33, 34, 0.7);
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+          box-shadow: 1px 1px 2px black, 0 0 35px black, 0 0 5px black;
+}
+
+@media screen and (max-width: 992px) {
+  .container-mode {
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-mode {
+    width: 98%;
+    -webkit-box-shadow: 1px 1px 4px #dfdddd, 0 0 50px #dfdddd, 0 0 5px #a7a4a4;
+            box-shadow: 1px 1px 4px #dfdddd, 0 0 50px #dfdddd, 0 0 5px #a7a4a4;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container-mode img {
+    margin: 15px;
+    float: left;
+    width: 350px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container-mode img {
+    margin: 15px;
+    width: 250px;
+    padding: 5px;
+  }
+}
+
+.col-sm-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* finns redan??
+@media screen and (max-width: 800px) {
+  .container-mode img {
+    float: left;
+  }
+}*/
+/*
+
+//js text-slide
+.dot {
+  transition: background-color 7s ease;
+}
+
+.mySlides {
+  display: none;
+}
+
+.slideshow-container {
+  background-color: rgb(0, 0, 0);
+  max-width: 1000px;
+  height: 130px;
+  position: relative;
+  margin: auto;
+  bottom: 200px;
+  left: 90px;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 800px) {
+  .slideshow-container {
+    bottom: 20px;
+  }
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  font-family: $myFont;
+  padding: 12px 12px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+//slide text
+@media screen and (max-width: 700px) {
+  .text {
+    position: relative;
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    line-height: 93%;
+  }
+}
+
+//text slide mindre
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+//slide layer
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  margin-top: 100px;
+  opacity: 0.6;
+}
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 7s;
+  animation-name: fade;
+  animation-duration: 7s;
+} //
+//face slide
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 1;
+  }
+}
+*/
+#contact-form {
+  font-size: 16px;
+  color: #cbcecd;
+  padding-bottom: 10px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+#contactform {
+  padding: 10px;
+}
+
+.btn-primary {
+  background-color: whitesmoke;
+  color: black;
+  font-family: Courier, Courier New, monospace;
+}
+
+.btn-primary:hover {
+  background-color: #dad6d6;
+  color: black;
+}
+
+.fas p {
+  font-size: 16px;
+  padding: 3px;
+}
+/*# sourceMappingURL=style.css.map */
